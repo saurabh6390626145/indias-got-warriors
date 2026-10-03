@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" role="img" aria-labelledby="title desc">
+  <title id="title">Original precision bolt-action rifle illustration</title>
+  <desc id="desc">A custom long-range rifle profile with a substantial adjustable stock, bolt receiver, large optic, long barrel and detachable magazine.</desc>
+  <defs>
+    <linearGradient id="stock" x2="0" y2="1"><stop stop-color="#777a73"/><stop offset=".48" stop-color="#3c4241"/><stop offset="1" stop-color="#171d1f"/></linearGradient>
+    <linearGradient id="metal" x2="0" y2="1"><stop stop-color="#d7cab9"/><stop offset=".16" stop-color="#81817b"/><stop offset=".42" stop-color="#343b3e"/><stop offset=".73" stop-color="#666b67"/><stop offset="1" stop-color="#22282a"/></linearGradient>
+    <linearGradient id="tube" x2="0" y2="1"><stop stop-color="#c7b9a7"/><stop offset=".28" stop-color="#545b5b"/><stop offset=".7" stop-color="#22282a"/><stop offset="1" stop-color="#918e84"/></linearGradient>
+    <linearGradient id="glass" x2="1" y2="1"><stop stop-color="#243b3b"/><stop offset=".48" stop-color="#73806f"/><stop offset="1" stop-color="#252f31"/></linearGradient>
+    <linearGradient id="ember" x2="1" y2="0"><stop stop-color="#68412d"/><stop offset=".5" stop-color="#efa366"/><stop offset="1" stop-color="#73462e"/></linearGradient>
+    <filter id="shadow" x="-.06" y="-.25" width="1.12" height="1.6"><feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dy="5"/><feComponentTransfer><feFuncA type="linear" slope=".72"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <g filter="url(#shadow)" stroke="#171c1d" stroke-width="4" stroke-linejoin="round">
+    <!-- long precision stock with cheek rest and adjustable butt -->
+    <path fill="url(#stock)" d="M28 91l34-17h105l37 9 47-7 17 18-9 19-55 5-7 43-37 14-70-9-45 16-22-10 14-42-18-17z"/>
+    <path fill="#aaa194" stroke-width="2" d="M31 93l25-12 10 61-20 14-16-9 13-39z"/>
+    <path fill="#1b2224" d="M92 93h78l29 11-4 20-46 4H95z"/>
+    <path fill="#d18b57" stroke="none" d="M77 132h47v5H77z"/>
+    <path fill="#686d68" d="M131 74h68l-7 19h-68z"/>
+    <path fill="none" stroke="#bbb09e" stroke-width="3" d="M88 150h80M78 159h73"/>
+    <!-- precision barrel extending far beyond the fore-end -->
+    <path fill="url(#tube)" d="M431 101h254l18 5v13l-18 5H431z"/>
+    <path fill="#373e40" d="M694 99l31 4 14 9-13 12-31 2-8-13z"/>
+    <path fill="#101517" stroke="#d0b99f" stroke-width="3" d="M715 106h15v13h-15z"/>
+    <path fill="#d18a55" stroke="none" d="M694 103h4v22h-4z"/>
+    <path fill="#aaa18f" stroke-width="2" d="M472 98h47v21h-47z"/>
+    <!-- bolt-action receiver and precision chassis -->
+    <path fill="url(#metal)" d="M182 89l21-17h205l31 17v45l-28 9-14 18H207l-25-15z"/>
+    <path fill="#22292b" d="M203 88h183l20 12v12H198z"/>
+    <path fill="url(#ember)" stroke="none" d="M215 92h85v5h-85z"/>
+    <path fill="#737770" stroke-width="2" d="M204 111h50v24h-50zM263 111h57v24h-57zM329 111h49v23h-49z"/>
+    <circle cx="221" cy="122" r="5" fill="#dfc6a7" stroke-width="2"/><circle cx="367" cy="101" r="4" fill="#dd955e" stroke-width="2"/>
+    <!-- bolt handle and knob, separated from the optic -->
+    <path fill="#b9aa96" d="M315 105h17v25h20v10h-31v-25h-6z"/>
+    <circle cx="354" cy="135" r="10" fill="url(#metal)"/>
+    <path fill="#d18a55" stroke="none" d="M351 132h6v6h-6z"/>
+    <!-- large high-mounted precision optic with objective and eyepiece -->
+    <path fill="#252b2d" d="M216 66h183v17H216z"/>
+    <path fill="#b2a18c" stroke-width="2" d="M225 61h15v6h-15zM249 61h15v6h-15zM273 61h15v6h-15zM297 61h15v6h-15zM321 61h15v6h-15zM345 61h15v6h-15zM369 61h15v6h-15z"/>
+    <path fill="url(#tube)" d="M241 34h136l15 7v20l-13 8H243l-15-9V42z"/>
+    <path fill="#30383a" d="M233 39h17v28h-17zM376 38h24v30h-24z"/>
+    <path fill="url(#glass)" stroke="#c3b39f" stroke-width="3" d="M226 39h10v29h-10zM398 40h12v26h-12z"/>
+    <path fill="#cf8d5c" stroke="none" d="M276 43h64v4h-64z"/>
+    <path fill="#171e20" d="M293 66V82h35V66"/>
+    <!-- box magazine and ergonomic grip -->
+    <path fill="url(#stock)" d="M275 148h49l-3 37-12 18h-26l-10-15z"/>
+    <path fill="#111719" d="M272 195h43v9h-43z"/>
+    <path fill="none" stroke="#cd8a56" stroke-width="3" d="M288 157h23v29h-23z"/>
+    <path fill="url(#stock)" d="M218 145h39l-5 43-13 9-21-6 7-29z"/>
+    <path fill="none" stroke="#c3af99" stroke-width="5" d="M217 141q0 22 22 22h17q15 0 15-17"/>
+    <path fill="none" stroke="#8e8476" stroke-width="3" d="M222 169l23 4M219 181l22 4"/>
+    <!-- free-floating precision fore-end, bipod sockets and rail details -->
+    <path fill="url(#stock)" d="M389 89h57v58h-57z"/>
+    <path fill="#171d1f" stroke="#b9aa96" stroke-width="2" d="M399 97h8v8h-8zM417 97h8v8h-8zM399 119h8v8h-8zM417 119h8v8h-8z"/>
+    <path fill="#252b2d" d="M400 145h12l-6 34-5 1zM426 145h12l7 34-5 3z"/>
+    <path fill="#d18a55" stroke="none" d="M397 146h45v4h-45z"/>
+  </g>
+</svg>

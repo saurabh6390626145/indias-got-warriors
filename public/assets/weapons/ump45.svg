@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img" aria-labelledby="title desc">
+  <title id="title">Original compact folding-stock submachine gun illustration</title>
+  <desc id="desc">A custom side-view SMG with a compact receiver, folding stock, short barrel, forward magazine and pistol grip.</desc>
+  <defs>
+    <linearGradient id="steel" x2="0" y2="1"><stop stop-color="#ddd0bf"/><stop offset=".18" stop-color="#7b7b75"/><stop offset=".48" stop-color="#343b3d"/><stop offset=".78" stop-color="#5d625f"/><stop offset="1" stop-color="#202628"/></linearGradient>
+    <linearGradient id="polymer" x2="0" y2="1"><stop stop-color="#59605e"/><stop offset=".5" stop-color="#252c2e"/><stop offset="1" stop-color="#111719"/></linearGradient>
+    <linearGradient id="bronze" x2="1" y2="0"><stop stop-color="#633f2d"/><stop offset=".45" stop-color="#e3985c"/><stop offset="1" stop-color="#6a452d"/></linearGradient>
+    <linearGradient id="barrel" x2="0" y2="1"><stop stop-color="#c0b4a5"/><stop offset=".28" stop-color="#51595a"/><stop offset=".7" stop-color="#252b2d"/><stop offset="1" stop-color="#8e8d85"/></linearGradient>
+    <filter id="shadow" x="-.1" y="-.25" width="1.2" height="1.6"><feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dy="5"/><feComponentTransfer><feFuncA type="linear" slope=".7"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <g filter="url(#shadow)" stroke="#171c1d" stroke-width="4" stroke-linejoin="round">
+    <!-- compact folding stock -->
+    <path fill="url(#polymer)" d="M34 79h30l14 12 65-4 8 18-68 11-16 40H43l10-45-20-10z"/>
+    <path fill="#a8a59c" stroke-width="2" d="M36 80h15l9 38-8 32H37l9-32z"/>
+    <path fill="none" stroke="#92928a" stroke-width="6" d="M76 94l60-2M78 111l61-7"/>
+    <path fill="#252b2d" d="M132 82l24-7 20 8-5 19-28 4z"/>
+    <!-- short barrel and squared muzzle -->
+    <path fill="url(#barrel)" d="M376 91h104l17 6v15l-17 6H376z"/>
+    <path fill="#353b3c" d="M484 86l24 5 9 11-8 18-25 2-7-12 2-17z"/>
+    <path fill="#0d1214" stroke="#bda48d" stroke-width="3" d="M500 96h11v16h-11z"/>
+    <path fill="#d18a55" stroke="none" d="M482 94h4v20h-4z"/>
+    <!-- compact receiver and upper rail -->
+    <path fill="url(#steel)" d="M151 75l19-15h174l27 17 18 5v44l-20 8-8 21H167l-17-14z"/>
+    <path fill="#202729" d="M171 72h157l17 13v12H166z"/>
+    <path fill="#bd7950" stroke="none" d="M187 78h99v5h-99z"/>
+    <path fill="#727772" stroke-width="2" d="M177 99h37v27h-37zM223 101h54v23h-54zM286 101h37v22h-37z"/>
+    <path fill="#31383a" stroke="#c3ae98" stroke-width="2" d="M174 57h104v12H174zM181 51h11v7h-11zM203 51h11v7h-11zM225 51h11v7h-11zM247 51h11v7h-11z"/>
+    <!-- folding rear and front sights -->
+    <path fill="#242a2c" d="M168 56V42h13v16M347 65V46h14v23"/>
+    <path fill="none" stroke="#c7b59f" stroke-width="3" d="M171 44h7M350 48h8"/>
+    <!-- forward hand guard -->
+    <path fill="url(#polymer)" d="M346 81h42v44h-42z"/>
+    <path fill="#121718" stroke="#97938a" stroke-width="2" d="M354 87h8v8h-8zM372 87h8v8h-8zM354 108h8v8h-8zM372 108h8v8h-8z"/>
+    <!-- trigger, guard, pistol grip -->
+    <path fill="none" stroke="#c2af9b" stroke-width="5" d="M221 133q1 24 25 24h16q16 0 15-17"/>
+    <path fill="url(#polymer)" d="M221 137h35l-5 47-13 11-21-7 7-30z"/>
+    <path fill="none" stroke="#8c8173" stroke-width="3" d="M225 162l21 4M222 174l22 4M220 185l16 3"/>
+    <!-- forward straight magazine and base -->
+    <path fill="url(#polymer)" d="M286 130h48l-3 53q-2 17-15 19h-24q-9-4-8-16z"/>
+    <path fill="#111718" d="M285 188h50v10h-50z"/>
+    <path fill="none" stroke="#b47b52" stroke-width="3" d="M298 143h23v39h-23z"/>
+    <path fill="#be7950" stroke="none" d="M301 151h17v3h-17zM301 161h17v3h-17zM301 171h17v3h-17z"/>
+    <!-- distinctive controls and finish accents -->
+    <circle cx="188" cy="113" r="5" fill="#e0c4a6" stroke-width="2"/><circle cx="323" cy="91" r="4" fill="#dc955d" stroke-width="2"/>
+    <path fill="url(#bronze)" stroke="none" d="M194 130h17v5h-17z"/>
+  </g>
+</svg>

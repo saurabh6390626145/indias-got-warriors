@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#101311" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="description" content="Play India's Got Warriors, an online multiplayer arena shooter. Create a room or join your crew with a room code, then fight in a shared arena. No account required." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="India's Got Warriors" />
+    <meta property="og:title" content="India's Got Warriors — Online Multiplayer Arena Shooter" />
+    <meta property="og:description" content="Play with your crew in an online multiplayer arena shooter. Create a room or join with a room code. No account required." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="India's Got Warriors — Online Multiplayer Arena Shooter" />
+    <meta name="twitter:description" content="Play with your crew in an online multiplayer arena shooter. Create a room or join with a room code. No account required." />
+    <!-- SITE_URL_METADATA_START -->
+    <link rel="canonical" href="__PUBLIC_SITE_URL__/" />
+    <meta property="og:url" content="__PUBLIC_SITE_URL__/" />
+    <meta property="og:image" content="__PUBLIC_SITE_URL__/assets/brand/title-logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="384" />
+    <meta property="og:image:height" content="174" />
+    <meta property="og:image:alt" content="India's Got Warriors" />
+    <meta name="twitter:image" content="__PUBLIC_SITE_URL__/assets/brand/title-logo.png" />
+    <!-- SITE_URL_METADATA_END -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "India's Got Warriors",
+        "description": "An online multiplayer arena shooter. Create a room or join your crew with a room code; no account required.",
+        "genre": "Online multiplayer arena shooter",
+        "gamePlatform": "Web browser",
+        "playMode": { "@type": "GamePlayMode", "name": "MultiPlayer" }
+      }
+    </script>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="INDIA'S GOT WARRIORS" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/assets/brand/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/assets/brand/favicon-64.png" />
+    <title>India's Got Warriors — Online Multiplayer Arena Shooter</title>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="INDIA'S GOT WARRIORS home">
+          <img class="brand-wordmark" src="/assets/brand/title-logo.png" alt="" />
+        </a>
+        <div class="topbar-right"><span class="live-dot"></span><span id="connection-label">CONNECTING</span><span class="topbar-divider"></span><span class="edition">OPEN PLAY · 01</span></div>
+      </header>
+
+      <main>
+        <section class="landing" id="landing-view">
+          <div class="landing-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> TACTICAL MULTIPLAYER · INDIA</p>
+            <h1 class="landing-wordmark-heading"><span class="visually-hidden">India's Got Warriors</span><img class="title-wordmark" src="/assets/brand/title-logo.png" alt="" /></h1>
+            <p class="intro">REAL PLAYERS. REAL SKILLS.<br /><strong>ARE YOU READY?</strong></p>
+            <p class="landing-details">Play a top-down arena shooter online with your crew. Create a room or join with a room code—no account required.</p>
+            <div class="status-note"><span>Assemble your crew. Claim the arena.</span></div>
+          </div>
+
+          <div class="entry-card">
+            <div class="card-heading"><span class="section-index">01 / GET IN</span></div>
+            <label class="field-label" for="player-name">YOUR CALLSIGN</label>
+            <input id="player-name" class="text-input" maxlength="18" placeholder="What do we call you?" autocomplete="nickname" />
+            <div class="entry-actions">
+              <button class="button button-primary" id="create-room"><span>CREATE A ROOM</span><span class="button-arrow">↗</span></button>
+              <div class="join-row">
+                <input id="room-code" class="text-input code-input" maxlength="5" placeholder="ROOM CODE" aria-label="Room code" autocomplete="off" />
+                <button class="button button-secondary" id="join-room" aria-label="Join room">JOIN <span>→</span></button>
+              </div>
+            </div>
+            <p class="form-error" id="form-error" role="status" aria-live="polite"></p>
+            <div class="card-foot"><span>NO ACCOUNT NEEDED</span><span>JUST YOU &amp; YOUR PEOPLE</span></div>
+          </div>
+          <div class="landing-orbit orbit-one"></div><div class="landing-orbit orbit-two"></div>
+        </section>
+
+        <section class="lobby-view hidden" id="lobby-view">
+          <div class="lobby-topline"><button class="back-button" id="leave-room">← <span>BACK TO ENTRY</span></button><span class="lobby-kicker"><span class="live-dot"></span> PRIVATE LOBBY</span></div>
+          <div class="lobby-heading-row">
+            <div><p class="eyebrow"><span class="eyebrow-line"></span> ROOM ASSEMBLY</p><img class="lobby-wordmark" src="/assets/brand/title-logo.png" alt="" /><h1 class="lobby-title">The arena<br /><span>is yours.</span></h1></div>
+            <div class="room-code-panel"><span class="field-label">ROOM CODE</span><button class="room-code-button" id="copy-code" title="Copy room code"><span id="room-code-display">-----</span><span class="copy-icon">▢</span></button><span class="copy-hint is-bold-target" id="copy-hint">SEND THIS TO YOUR CREW</span></div>
+          </div>
+          <div class="lobby-grid">
+            <div class="players-panel">
+              <div class="panel-heading"><span class="section-index">02 / YOUR CREW</span><span class="player-count" id="player-count">01 / 04</span></div>
+              <div class="player-list" id="player-list"></div>
+              <div class="lobby-bottom"><p class="lobby-message" id="lobby-message">Waiting for your crew to arrive.</p><button class="button armory-open-button" id="open-armory" type="button"><span>OPEN ARMORY · LOADOUT</span><span class="button-arrow">↗</span></button><div class="lobby-actions"><button class="button button-ready ready-button" id="ready-button"><span>READY UP</span><span class="button-arrow">↗</span></button><button class="button button-primary launch-button" id="launch-match"><span>DROP IN</span><span class="button-arrow">↗</span></button></div></div>
+            </div>
+            <div class="heroes-panel">
+              <div class="panel-heading"><span class="section-index">03 / CHOOSE YOUR CONTENDER</span><span class="hero-count">FOUR CONTENDERS</span></div>
+              <div class="hero-grid" id="hero-grid"></div>
+              <div class="arena-strip"><div class="arena-glyph" aria-hidden="true"><span></span><span></span><span></span><i></i></div><div><span class="field-label">TONIGHT'S ARENA</span><strong>THE GLASSWAKE</strong></div><span class="arena-tag">OPEN PLAY · 01</span></div>
+            </div>
+          </div>
+          <p class="phase-note">Your crew is gathering. Match play arrives in the next phase.</p>
+        </section>
+
+        <section class="weapon-view hidden" id="weapon-view" aria-labelledby="weapon-view-title">
+          <div class="weapon-view-top"><button class="back-button" id="back-from-armory" type="button">← <span>BACK TO ARENA</span></button><div class="weapon-points"><span>SESSION POINTS</span><strong id="armory-points">0</strong></div></div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> FIELD LOADOUTS</p>
+          <h1 class="weapon-view-title" id="weapon-view-title">THE ARMORY</h1>
+          <p class="weapon-view-copy">Earn points in this room, unlock new options, and choose a loadout before the next drop.</p>
+          <div class="weapon-grid" id="weapon-grid"></div>
+          <p class="weapon-session-note">Progress is kept for this room session. No account required.</p>
+        </section>
+
+        <section class="game-view hidden" id="game-view">
+          <header class="match-topbar"><button class="back-button" id="exit-match">← <span>LEAVE ARENA</span></button><div class="match-title"><span class="live-dot"></span><strong>THE GLASSWAKE</strong><span>OPEN PLAY · 01</span></div><div class="match-count" id="match-count">04 CONTENDERS</div></header>
+          <div class="canvas-wrap"><canvas id="arena-canvas" aria-label="The Glasswake top-down multiplayer arena"></canvas><div class="map-label" id="map-label">HUSHGLASS YARD</div><div class="elimination-banner hidden" id="elimination-banner"></div><div class="kill-milestone hidden" id="kill-milestone" aria-live="polite"><strong id="kill-milestone-title"></strong><span id="kill-milestone-player"></span></div><div class="winner-overlay hidden" id="winner-overlay" aria-labelledby="winner-title"><section class="results-card"><header class="results-header"><p class="eyebrow"><img class="kicker-wordmark" src="/assets/brand/title-logo.png" alt="" /><span>POST-MATCH</span></p><span class="results-round" id="results-round">ROUND 01 · 04:00</span></header><h2 id="winner-title">ROUND RESULTS</h2><p class="results-winner" id="winner-subtitle">Round winner</p><section class="personal-result"><p class="result-kicker">YOUR RESULT</p><strong id="personal-result-name">PLAYER</strong><span class="personal-result-status" id="personal-result-label">RESULT</span><div class="personal-result-stats"><span><b id="personal-result-kills">0</b><small>KILLS</small></span><span><b id="personal-result-damage">0</b><small>DAMAGE</small></span><span><b id="personal-result-accuracy">0%</b><small>ACCURACY</small></span></div></section><section class="top-fragger-card"><span>🏆 TOP FRAGGER</span><strong id="top-fragger-name">—</strong><p><b id="top-fragger-kills">0</b> KILLS <i>·</i> <b id="top-fragger-damage">0</b> DAMAGE</p></section><section class="results-section"><h3>PLAYER RESULTS</h3><div class="round-results-list" id="round-results-list"></div></section></section><div class="results-actions"><button class="button share-result-button" id="share-result" type="button">SHARE RESULT</button><p class="share-result-feedback" id="share-result-feedback" aria-live="polite"></p><button class="button button-primary hidden" id="play-again" type="button"><span>PLAY AGAIN</span><span class="button-arrow">↗</span></button><p class="results-waiting hidden" id="results-waiting">WAITING FOR THE HOST TO START THE NEXT ROUND</p><button class="button armory-open-button winner-armory-button hidden" id="winner-armory" type="button"><span>EDIT LOADOUT</span><span class="button-arrow">↗</span></button><details class="session-details"><summary>ROOM LEADERBOARD</summary><div class="session-leaderboard" id="session-leaderboard"></div></details></div></div></div>
+          <div class="minimap-overlay" aria-label="Arena minimap"><canvas id="minimap-canvas" aria-label="Map showing players and camera view"></canvas></div>
+          <button class="match-menu-toggle" id="match-menu-toggle" type="button" aria-haspopup="dialog" aria-expanded="false" aria-label="Open match menu">☰ <span>MENU</span></button>
+          <div class="match-menu hidden" id="match-menu" role="dialog" aria-modal="true" aria-labelledby="match-menu-title"><div class="match-menu-card"><p class="eyebrow">THE GLASSWAKE</p><h2 id="match-menu-title">Match menu</h2><p class="menu-copy">Your contender will wait here. The match continues for everyone else.</p><label class="touch-size-setting" for="touch-stick-size"><span>TOUCH STICK SIZE</span><output id="touch-stick-size-value" for="touch-stick-size">130px</output><input id="touch-stick-size" type="range" min="80" max="160" step="10" value="130" /></label><button class="button button-primary" id="resume-match" type="button"><span>RESUME MATCH</span><span class="button-arrow">↗</span></button><button class="button leave-match-button" id="leave-match" type="button"><span>LEAVE ARENA</span><span>↗</span></button></div></div>
+          <div class="fullscreen-gate hidden" id="fullscreen-gate" role="dialog" aria-modal="true" aria-labelledby="fullscreen-title"><div class="fullscreen-card"><p class="eyebrow brand-kicker"><img class="kicker-wordmark" src="/assets/brand/title-logo.png" alt="" /><span>MOBILE PLAY</span></p><h2 id="fullscreen-title">Enter the arena.</h2><p class="fullscreen-message" id="fullscreen-message">Tap below to enter fullscreen.</p><p class="ios-home-hint hidden" id="ios-home-hint">Add to Home Screen for full-screen play.</p><button class="button button-primary" id="enter-fullscreen" type="button"><span>ENTER FULLSCREEN</span><span class="button-arrow">↗</span></button><button class="button continue-browser hidden" id="continue-browser" type="button"><span>CONTINUE IN BROWSER</span><span>↗</span></button></div></div>
+          <div class="rotate-overlay" id="rotate-overlay" aria-live="polite"><div><span class="rotate-glyph">↻</span><strong>ROTATE YOUR PHONE</strong><span><img class="rotate-wordmark" src="/assets/brand/title-logo.png" alt="" /><span>PLAYS IN LANDSCAPE</span></span></div></div>
+          <div class="match-hud"><div class="hud-round-clock"><small>ROUND</small><time id="round-timer" datetime="PT4M">04:00</time></div><div class="hud-weapon"><small id="weapon-label">UMP45</small><span id="weapon-level">LEVEL 1</span></div><div class="hud-ammo"><strong id="ammo-count">24 <small>/ 96</small></strong></div><div class="hud-points"><small>POINTS</small><strong id="points-count">0</strong></div><button class="hud-reload" id="desktop-reload" type="button" title="Reload · R">RELOAD <kbd>R</kbd></button></div>
+          <div class="touch-controls" id="touch-controls" aria-label="Touch controls">
+            <div class="touch-stick move-stick" id="move-pad" aria-label="Move and turn joystick"><div class="stick-base"><i class="stick-knob" id="move-knob"></i></div></div>
+            <div class="touch-stick aim-stick" id="aim-pad" aria-label="Aim and fire joystick"><div class="stick-base"><i class="stick-knob" id="aim-knob"></i></div></div>
+          </div>
+          <pre class="touch-debug hidden" id="touch-debug" aria-live="polite"></pre>
+          <div class="match-feed" id="match-feed" aria-live="polite"></div>
+        </section>
+      </main>
+      <footer class="site-footer"><span class="footer-project-label">AN ORIGINAL ARENA PROJECT</span><span>BUILT FOR YOUR CREW </span></footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

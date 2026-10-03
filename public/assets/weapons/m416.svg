@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" role="img" aria-labelledby="title desc">
+  <title id="title">Original modular shoulder-rifle illustration</title>
+  <desc id="desc">A custom rifle profile with an adjustable stock, long handguard, optic rail, forward magazine, pistol grip and extended barrel.</desc>
+  <defs>
+    <linearGradient id="receiver" x2="0" y2="1"><stop stop-color="#d4c8b8"/><stop offset=".16" stop-color="#85847e"/><stop offset=".42" stop-color="#3a4244"/><stop offset=".72" stop-color="#626866"/><stop offset="1" stop-color="#252c2e"/></linearGradient>
+    <linearGradient id="furniture" x2="0" y2="1"><stop stop-color="#666b67"/><stop offset=".45" stop-color="#303739"/><stop offset="1" stop-color="#171d1f"/></linearGradient>
+    <linearGradient id="barrel" x2="0" y2="1"><stop stop-color="#d0c3b0"/><stop offset=".23" stop-color="#555c5c"/><stop offset=".67" stop-color="#202729"/><stop offset="1" stop-color="#8d8c84"/></linearGradient>
+    <linearGradient id="accent" x2="1" y2="0"><stop stop-color="#66412d"/><stop offset=".5" stop-color="#eea365"/><stop offset="1" stop-color="#71442e"/></linearGradient>
+    <filter id="shadow" x="-.08" y="-.25" width="1.16" height="1.6"><feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dy="5"/><feComponentTransfer><feFuncA type="linear" slope=".72"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <g filter="url(#shadow)" stroke="#171c1d" stroke-width="4" stroke-linejoin="round">
+    <!-- adjustable shoulder stock -->
+    <path fill="url(#furniture)" d="M29 78h31l14 12 60-4 17 13-4 21-65 4-10 42H39l10-46-20-13z"/>
+    <path fill="#a39c90" stroke-width="2" d="M31 79h17l11 40-10 42H38l8-42z"/>
+    <path fill="none" stroke="#99938a" stroke-width="5" d="M78 96l58-2M77 112l66-4"/>
+    <path fill="#d28a57" stroke="none" d="M56 125h15v4H56z"/>
+    <!-- extended barrel and compensator -->
+    <path fill="url(#barrel)" d="M466 91h166l20 7v14l-20 7H466z"/>
+    <path fill="#3b4243" d="M642 89l26 4 13 12-12 14-27 2-8-9z"/>
+    <path fill="#101517" stroke="#c3ad95" stroke-width="3" d="M661 99h13v13h-13z"/>
+    <path fill="#d18a55" stroke="none" d="M642 94h4v23h-4z"/>
+    <!-- receiver and feed area -->
+    <path fill="url(#receiver)" d="M133 78l17-18h204l24 17 15 5v49l-23 7-13 18H151l-18-16z"/>
+    <path fill="#272e30" d="M153 77h183l20 12v9H147z"/>
+    <path fill="url(#accent)" stroke="none" d="M170 81h93v5h-93z"/>
+    <path fill="#7a7d77" stroke-width="2" d="M163 101h43v25h-43zM213 103h54v21h-54zM276 102h40v23h-40z"/>
+    <circle cx="185" cy="113" r="5" fill="#dbc5aa" stroke-width="2"/><circle cx="324" cy="92" r="4" fill="#e09a60" stroke-width="2"/>
+    <!-- continuous top rail and low optic -->
+    <path fill="#252b2d" d="M145 59h243v14H145z"/>
+    <path fill="#b8aa98" stroke-width="2" d="M153 55h16v6h-16zM176 55h16v6h-16zM199 55h16v6h-16zM222 55h16v6h-16zM245 55h16v6h-16zM268 55h16v6h-16zM291 55h16v6h-16zM314 55h16v6h-16zM337 55h16v6h-16z"/>
+    <path fill="#252b2d" d="M207 36h78l12 8v14h-16l-7-8h-54l-5 8h-17V44z"/>
+    <path fill="#5f6868" stroke="#b6a18a" stroke-width="2" d="M218 42h52v8h-52z"/>
+    <path fill="#d18a55" stroke="none" d="M239 44h12v4h-12z"/>
+    <!-- long ventilated handguard -->
+    <path fill="url(#furniture)" d="M366 78h113v51H366z"/>
+    <path fill="#202628" stroke="#a99c89" stroke-width="2" d="M377 84h8v8h-8zM395 84h8v8h-8zM413 84h8v8h-8zM431 84h8v8h-8zM449 84h8v8h-8zM377 113h8v8h-8zM395 113h8v8h-8zM413 113h8v8h-8zM431 113h8v8h-8zM449 113h8v8h-8z"/>
+    <path fill="#c9b59e" d="M373 72h103v6H373z"/>
+    <!-- trigger guard and ergonomic pistol grip -->
+    <path fill="none" stroke="#c4b29f" stroke-width="5" d="M198 137q1 23 25 23h19q16 0 15-19"/>
+    <path fill="url(#furniture)" d="M198 139h39l-5 49-14 10-22-7 8-31z"/>
+    <path fill="none" stroke="#8d8478" stroke-width="3" d="M202 165l24 4M200 177l23 4M197 188l17 3"/>
+    <!-- curved magazine forward of grip -->
+    <path fill="url(#furniture)" d="M284 132h49l-2 30q-2 23-13 35l-12 10-27-7 10-23z"/>
+    <path fill="#111719" d="M278 194l43 8-3 8-43-7z"/>
+    <path fill="none" stroke="#c88a5a" stroke-width="3" d="M295 144h23v39l-14 15"/>
+    <path fill="#c88a5a" stroke="none" d="M298 153h17v3h-17zM296 164h17v3h-17zM294 175h17v3h-17z"/>
+    <!-- forward sight and small original hardware accents -->
+    <path fill="#252b2d" d="M462 69V47h14v27"/><path fill="none" stroke="#cbbba7" stroke-width="3" d="M465 49h8"/>
+    <path fill="url(#accent)" stroke="none" d="M389 132h52v4h-52z"/>
+  </g>
+</svg>

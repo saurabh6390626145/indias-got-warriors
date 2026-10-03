@@ -1,0 +1,38 @@
+{
+  "canvas": 320,
+  "pivot": [
+    160,
+    160
+  ],
+  "note": "Sprites face RIGHT (east). Rotate around pivot. muzzle = [dx,dy] from pivot in sprite pixels.",
+  "sprites": {
+    "vanguard-top": {
+      "file": "vanguard-top.png",
+      "muzzle": [
+        150,
+        20
+      ]
+    },
+    "chimera-top": {
+      "file": "chimera-top.png",
+      "muzzle": [
+        138,
+        18
+      ]
+    },
+    "spark-mech-top": {
+      "file": "spark-mech-top.png",
+      "muzzle": [
+        105,
+        20
+      ]
+    },
+    "nira-top": {
+      "file": "nira-top.png",
+      "muzzle": [
+        152,
+        26
+      ]
+    }
+  }
+}

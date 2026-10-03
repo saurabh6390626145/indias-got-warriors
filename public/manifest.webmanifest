@@ -1,0 +1,16 @@
+{
+  "name": "India's Got Warriors",
+  "short_name": "IGW",
+  "description": "An online multiplayer arena shooter. Create a room or join your crew with a room code; no account required.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "landscape",
+  "background_color": "#101311",
+  "theme_color": "#101311",
+  "icons": [
+    { "src": "/assets/brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

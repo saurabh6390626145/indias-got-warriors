@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img" aria-labelledby="title desc">
+  <title id="title">Original compact bullpup rifle illustration</title>
+  <desc id="desc">A custom bullpup profile with a short overall length, rear-set magazine, forward trigger and short exposed barrel.</desc>
+  <defs>
+    <linearGradient id="alloy" x2="0" y2="1"><stop stop-color="#d4c4b0"/><stop offset=".16" stop-color="#797972"/><stop offset=".43" stop-color="#363d3f"/><stop offset=".74" stop-color="#606561"/><stop offset="1" stop-color="#22282a"/></linearGradient>
+    <linearGradient id="poly" x2="0" y2="1"><stop stop-color="#68706c"/><stop offset=".5" stop-color="#303739"/><stop offset="1" stop-color="#161c1e"/></linearGradient>
+    <linearGradient id="hot" x2="1" y2="0"><stop stop-color="#70482f"/><stop offset=".48" stop-color="#f0a366"/><stop offset="1" stop-color="#74472d"/></linearGradient>
+    <filter id="shadow" x="-.1" y="-.25" width="1.2" height="1.6"><feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dy="5"/><feComponentTransfer><feFuncA type="linear" slope=".72"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <g filter="url(#shadow)" stroke="#171c1d" stroke-width="4" stroke-linejoin="round">
+    <!-- short integrated stock -->
+    <path fill="url(#poly)" d="M34 83l25-12h85l34 9v62l-29 12H73l-39-17z"/>
+    <path fill="#979389" stroke-width="2" d="M37 86l17-8 7 65-18 7z"/>
+    <path fill="none" stroke="#c0aa92" stroke-width="3" d="M75 91h63M75 101h72M75 111h72"/>
+    <path fill="#d68c57" stroke="none" d="M83 126h43v5H83z"/>
+    <!-- short forward barrel with protective front block -->
+    <path fill="#444b4c" d="M420 92h89l16 7v13l-16 7h-89z"/>
+    <path fill="#a29c8e" d="M510 87l24 4 9 14-8 16-24 1-7-14z"/>
+    <path fill="#101517" stroke="#d1b89d" stroke-width="3" d="M528 99h11v13h-11z"/>
+    <path fill="#d18a55" stroke="none" d="M509 94h4v20h-4z"/>
+    <!-- bullpup receiver: magazine remains behind the forward pistol grip -->
+    <path fill="url(#alloy)" d="M136 75l19-17h221l27 13 32 13v53l-35 10-17 19H162l-26-18z"/>
+    <path fill="#252c2e" d="M158 73h214l17 12-4 12H151z"/>
+    <path fill="url(#hot)" stroke="none" d="M176 77h121v5H176z"/>
+    <path fill="#747872" stroke-width="2" d="M159 101h44v30h-44zM211 99h62v31h-62zM282 98h42v32h-42zM333 100h45v31h-45z"/>
+    <circle cx="183" cy="115" r="5" fill="#e0c7a8" stroke-width="2"/><circle cx="359" cy="91" r="4" fill="#df975c" stroke-width="2"/>
+    <!-- integrated carrying bridge and optic -->
+    <path fill="#252b2d" d="M154 56h244l-10 16H164z"/>
+    <path fill="#b4a38e" stroke-width="2" d="M166 51h14v7h-14zM190 51h14v7h-14zM214 51h14v7h-14zM238 51h14v7h-14zM262 51h14v7h-14zM286 51h14v7h-14zM310 51h14v7h-14zM334 51h14v7h-14z"/>
+    <path fill="#202628" d="M220 31h70l14 9v14h-16l-7-7h-53l-7 7h-17V39z"/>
+    <path fill="#657071" stroke="#c2ac95" stroke-width="2" d="M230 38h47v8h-47z"/>
+    <path fill="#d18a55" stroke="none" d="M249 40h12v4h-12z"/>
+    <!-- rear-mounted magazine, unmistakably behind the trigger/grip -->
+    <path fill="url(#poly)" d="M229 139h46l-4 43q-2 16-14 20h-24q-11-6-8-19z"/>
+    <path fill="#111719" d="M226 192h47v9h-47z"/>
+    <path fill="none" stroke="#c58350" stroke-width="3" d="M239 150h24v37l-9 10"/>
+    <path fill="#c58350" stroke="none" d="M240 158h19v3h-19zM239 169h18v3h-18zM237 180h18v3h-18z"/>
+    <!-- forward-set trigger and pistol grip (ahead of rear magazine) -->
+    <path fill="none" stroke="#c7b49e" stroke-width="5" d="M324 134q1 22 22 22h17q16 0 15-18"/>
+    <path fill="url(#poly)" d="M327 136h38l-5 49-13 10-22-7 7-29z"/>
+    <path fill="none" stroke="#958777" stroke-width="3" d="M331 163l22 4M328 175l22 4M325 186l16 3"/>
+    <!-- compact ventilated fore-end -->
+    <path fill="url(#poly)" d="M383 78h43v63h-43z"/>
+    <path fill="#171d1f" stroke="#aaa08e" stroke-width="2" d="M391 87h8v9h-8zM408 87h8v9h-8zM391 108h8v9h-8zM408 108h8v9h-8zM391 128h8v8h-8zM408 128h8v8h-8z"/>
+    <path fill="#333a3b" d="M420 69V47h14v30"/><path fill="none" stroke="#cbb8a0" stroke-width="3" d="M423 49h8"/>
+    <path fill="url(#hot)" stroke="none" d="M282 135h28v4h-28z"/>
+  </g>
+</svg>
